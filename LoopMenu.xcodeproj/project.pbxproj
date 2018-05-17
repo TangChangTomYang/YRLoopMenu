@@ -15,6 +15,12 @@
 		148F986720AD2DA10095A213 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 148F986620AD2DA10095A213 /* main.m */; };
 		148F987120AD2DA10095A213 /* LoopMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 148F987020AD2DA10095A213 /* LoopMenuTests.m */; };
 		148F987C20AD2DA10095A213 /* LoopMenuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 148F987B20AD2DA10095A213 /* LoopMenuUITests.m */; };
+		148F988C20AD30680095A213 /* YRLoopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 148F988B20AD30680095A213 /* YRLoopMenuView.m */; };
+		148F988F20AD30BF0095A213 /* YRLoopMenuMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 148F988E20AD30BF0095A213 /* YRLoopMenuMode.m */; };
+		148F989220AD32340095A213 /* YRLoopMunuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 148F989120AD32340095A213 /* YRLoopMunuLayout.m */; };
+		148F989520AD4D650095A213 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 148F989420AD4D650095A213 /* UIView+Extension.m */; };
+		148F989E20AD52270095A213 /* YRLoopMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 148F989C20AD52270095A213 /* YRLoopMenuCell.m */; };
+		148F989F20AD52270095A213 /* YRLoopMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 148F989D20AD52270095A213 /* YRLoopMenuCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,17 @@
 		148F987720AD2DA10095A213 /* LoopMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoopMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		148F987B20AD2DA10095A213 /* LoopMenuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoopMenuUITests.m; sourceTree = "<group>"; };
 		148F987D20AD2DA10095A213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		148F988A20AD30680095A213 /* YRLoopMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YRLoopMenuView.h; sourceTree = "<group>"; };
+		148F988B20AD30680095A213 /* YRLoopMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YRLoopMenuView.m; sourceTree = "<group>"; };
+		148F988D20AD30BF0095A213 /* YRLoopMenuMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YRLoopMenuMode.h; sourceTree = "<group>"; };
+		148F988E20AD30BF0095A213 /* YRLoopMenuMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YRLoopMenuMode.m; sourceTree = "<group>"; };
+		148F989020AD32340095A213 /* YRLoopMunuLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YRLoopMunuLayout.h; sourceTree = "<group>"; };
+		148F989120AD32340095A213 /* YRLoopMunuLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YRLoopMunuLayout.m; sourceTree = "<group>"; };
+		148F989320AD4D650095A213 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		148F989420AD4D650095A213 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		148F989B20AD52270095A213 /* YRLoopMenuCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YRLoopMenuCell.h; sourceTree = "<group>"; };
+		148F989C20AD52270095A213 /* YRLoopMenuCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YRLoopMenuCell.m; sourceTree = "<group>"; };
+		148F989D20AD52270095A213 /* YRLoopMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YRLoopMenuCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +122,9 @@
 				148F985820AD2D9F0095A213 /* AppDelegate.m */,
 				148F985A20AD2D9F0095A213 /* ViewController.h */,
 				148F985B20AD2D9F0095A213 /* ViewController.m */,
+				148F989320AD4D650095A213 /* UIView+Extension.h */,
+				148F989420AD4D650095A213 /* UIView+Extension.m */,
+				148F988920AD30350095A213 /* LoopMenuView */,
 				148F985D20AD2D9F0095A213 /* Main.storyboard */,
 				148F986020AD2DA10095A213 /* Assets.xcassets */,
 				148F986220AD2DA10095A213 /* LaunchScreen.storyboard */,
@@ -130,6 +150,22 @@
 				148F987D20AD2DA10095A213 /* Info.plist */,
 			);
 			path = LoopMenuUITests;
+			sourceTree = "<group>";
+		};
+		148F988920AD30350095A213 /* LoopMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				148F988A20AD30680095A213 /* YRLoopMenuView.h */,
+				148F988B20AD30680095A213 /* YRLoopMenuView.m */,
+				148F988D20AD30BF0095A213 /* YRLoopMenuMode.h */,
+				148F988E20AD30BF0095A213 /* YRLoopMenuMode.m */,
+				148F989020AD32340095A213 /* YRLoopMunuLayout.h */,
+				148F989120AD32340095A213 /* YRLoopMunuLayout.m */,
+				148F989B20AD52270095A213 /* YRLoopMenuCell.h */,
+				148F989C20AD52270095A213 /* YRLoopMenuCell.m */,
+				148F989D20AD52270095A213 /* YRLoopMenuCell.xib */,
+			);
+			path = LoopMenuView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				148F989F20AD52270095A213 /* YRLoopMenuCell.xib in Resources */,
 				148F986420AD2DA10095A213 /* LaunchScreen.storyboard in Resources */,
 				148F986120AD2DA10095A213 /* Assets.xcassets in Resources */,
 				148F985F20AD2D9F0095A213 /* Main.storyboard in Resources */,
@@ -262,7 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				148F989E20AD52270095A213 /* YRLoopMenuCell.m in Sources */,
+				148F988C20AD30680095A213 /* YRLoopMenuView.m in Sources */,
+				148F988F20AD30BF0095A213 /* YRLoopMenuMode.m in Sources */,
 				148F985C20AD2D9F0095A213 /* ViewController.m in Sources */,
+				148F989520AD4D650095A213 /* UIView+Extension.m in Sources */,
+				148F989220AD32340095A213 /* YRLoopMunuLayout.m in Sources */,
 				148F986720AD2DA10095A213 /* main.m in Sources */,
 				148F985920AD2D9F0095A213 /* AppDelegate.m in Sources */,
 			);

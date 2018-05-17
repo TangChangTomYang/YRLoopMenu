@@ -7,22 +7,37 @@
 //
 
 #import "ViewController.h"
+#import "UIView+Extension.h"
+#import "YRLoopMenuView.h"
 
 @interface ViewController ()
 
+@property (strong, nonatomic) YRLoopMenuView *loopMenu ;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+   YRLoopMenuView *loopMenu = [[YRLoopMenuView alloc ] initWithFrame:CGRectMake(0, 100, self.view.width, 200)];
+    loopMenu.backgroundColor = [UIColor brownColor];
+    [self.view addSubview:loopMenu];
+    self.loopMenu = loopMenu;
+    
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    if ([self.loopMenu isScrolling]) {
+        NSLog(@"还在转----------");
+    }
+    else{
+       
+        NSLog(@"选中了---------%@-", [self.loopMenu selectedIconIndex]);
+    }
 }
 
 
