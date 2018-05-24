@@ -65,11 +65,11 @@
     if (!_modeArrM) {
         _modeArrM = [NSMutableArray array];
         
-        [_modeArrM addObject: [YRLoopMenuMode modeWithName:@"韩信"]];
-        [_modeArrM addObject: [YRLoopMenuMode modeWithName:@"李白"]];
-        [_modeArrM addObject: [YRLoopMenuMode modeWithName:@"刘备"]];
-        [_modeArrM addObject: [YRLoopMenuMode modeWithName:@"嬴政"]];
-        [_modeArrM addObject: [YRLoopMenuMode modeWithName:@"其他"]];
+        [_modeArrM addObject: [YRLoopMenuMode modeWithName:@"family_roomicon0_on"]];
+        [_modeArrM addObject: [YRLoopMenuMode modeWithName:@"family_roomicon1_on"]];
+        [_modeArrM addObject: [YRLoopMenuMode modeWithName:@"family_roomicon2_on"]];
+        [_modeArrM addObject: [YRLoopMenuMode modeWithName:@"family_roomicon3_on"]];
+        [_modeArrM addObject: [YRLoopMenuMode modeWithName:@"family_roomicon4_on"]];
         
     }
     return _modeArrM;
